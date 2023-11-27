@@ -35,7 +35,7 @@ const MonthCard = () => {
   const {MonthMm, MonthEn, FestivalMm, FestivalEn, Description, Detail, MonthImg} = monthData;
   
 return (
-  <div className='w-full h-screen max-container padding-container mb-8 relative'>
+  <div className='w-full h-full max-container padding-container mb-8 relative'>
     <div className='absolute bold-24 md:bold-32 cursor-pointer' onClick={goBack}><HiArrowLeft /></div>
       <div className='flexCenter flex-col gap-2'>
         <h1 className='text-black regular-24 md:regular-32 text-center'>{MonthMm} [{MonthEn}]</h1>
@@ -48,7 +48,7 @@ return (
         </div>
         <p className='lg:w-1/2 tracking-wide leading-relaxed regular-18 mt-5'>{Detail}</p>
       </div>
-      <div className="flexCenter my-10">
+      <div className="flexCenter mt-10">
         <button onClick={goBack} className='bg-white px-6 md:px-8 py-2 md:py-3 text-black border-black transition-all hover:bg-gray-100 hover:border-black border hover:text-black active:bg-black active:text-white cursor-pointer'>BACK</button>
       </div>
   </div>
